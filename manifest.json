@@ -1,0 +1,24 @@
+{
+    "name": "AntiShorts",
+    "version": "1.0",
+    "manifest_version": 3,
+    "description": "",
+    "content_scripts": [
+        {
+            "matches": [
+              "<all_urls>"
+            ],
+            "js": [
+                "contentScripts.js"
+            ]
+        }
+    ],
+    "permissions": [
+        "storage",
+        "activeTab",
+        "scripting"
+    ],
+    "host_permissions": [
+        "<all_urls>"
+    ]
+}
