@@ -2,7 +2,9 @@ const xpath = '//ytd-rich-section-renderer[.//span[@id="title" and text()="Short
     + '| //ytd-mini-guide-entry-renderer[.//span[@class="title style-scope ytd-mini-guide-entry-renderer" and text()="Shorts"]] '
     + '| //ytd-guide-entry-renderer[.//yt-formatted-string[text()="Shorts"]]' 
     + '| //ytd-reel-shelf-renderer'
-    + '| //div[@id="shorts-container"]';
+    + '| //div[@id="shorts-container"]'
+    + '| //ytd-video-renderer[.//div[@class="yt-badge-shape__text" and text()="SHORTS"]]'
+    + '| //grid-shelf-view-model';
 
 setInterval(() => {
     if ((window.location.href.includes('youtube') || window.location.href.includes('youtu.be')) && window.location.href.includes('/shorts/')) {
