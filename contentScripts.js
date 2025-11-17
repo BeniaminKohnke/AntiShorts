@@ -4,6 +4,7 @@ const xpath = '//ytd-rich-section-renderer[.//span[@id="title" and text()="Short
     + '| //ytd-reel-shelf-renderer'
     + '| //div[@id="shorts-container"]'
     + '| //ytd-video-renderer[.//div[@class="yt-badge-shape__text" and text()="SHORTS"]]'
+    + '| //chip-shape[.//button/div[contains(., "Shorts")]]'
     + '| //grid-shelf-view-model';
 
 setInterval(() => {
